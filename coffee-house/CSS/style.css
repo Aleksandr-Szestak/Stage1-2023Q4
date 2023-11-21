@@ -22,7 +22,7 @@ body {
     background-color: #b6aea7;
 }
 
-.container{
+.container {
     display: flex;
     max-width: 1440px;
     padding: 20px 0px 40px 0px;
@@ -35,3 +35,15 @@ body {
 }
 
 /*#endregion*/
+
+.header {
+    display: flex;
+}
+
+
+
+.logo {
+    width: 100px;
+    height: 60px;
+    background-color: aqua;
+}
