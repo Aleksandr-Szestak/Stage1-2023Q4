@@ -38,12 +38,54 @@ body {
 
 .header {
     display: flex;
+    /* padding: 20px 0 20px; */
+    margin-left: 40px;
+    margin-right: 40px;
+    /* max-width: 1188px; */
+    /* height: 60px; */
 }
-
-
 
 .logo {
     width: 100px;
     height: 60px;
-    background-color: aqua;
+    /* background-color: aqua; */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1188px;
+    height: 60px;
+    /* background-color:aquamarine; */
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+
+.menu-item{    
+    display: inline;
+    margin-right: 40px;
+    list-style-type: none;
+    /* margin-right: 30px;   */
+}
+
+.menu-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 72px;
+    height: 60px;
+    /* background-color: aqua; */
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
 }
