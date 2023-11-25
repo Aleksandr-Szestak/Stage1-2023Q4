@@ -69,10 +69,18 @@ body {
 
 .menu-item{    
     display: inline;
-    margin-right: 40px;
+    padding-right: 40px;
     list-style-type: none;
     /* margin-right: 30px;   */
 }
+
+menu-link{
+    padding-bottom: 4px;
+}
+
+.menu-item:last-child {
+    padding-right: 0px;
+  }
 
 .menu-right {
     display: flex;
