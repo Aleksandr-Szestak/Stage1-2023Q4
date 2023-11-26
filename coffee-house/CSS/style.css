@@ -101,6 +101,7 @@ menu-link{
 }
 /*#endregion*/
 
+/*#region main-slogan */
 section.main-slogan{
     width: 1360px;
     height: 644px;
@@ -180,3 +181,30 @@ section.main-slogan{
     height: 24px;
     padding: 20px 78px;
   }
+
+/*#endregion*/
+
+.main-slider {
+    margin-top: 100px;
+}
+
+.main-slider-phrase {
+    color:#403F3D;
+    text-align: center;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+}
+
+.favorite {
+    color:#B0907A;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+
