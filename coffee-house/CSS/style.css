@@ -496,3 +496,47 @@ section.main-slogan{
 
 /*#endregion*/
 
+.contacts {
+
+    display: flex;
+    /* max-width: 1360px; */
+    width: 1360px;
+
+    height: 450px;
+
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    align-self: stretch;
+
+    border-radius: 40px;
+    background-color: #665F55;
+}
+
+.contacts-left-phrase {
+    width: 530px;
+    height: 150px;
+    color: #E1D4C9;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+}
+
+.time {
+    color:#B0907A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;    
+}
+
+.social {
+    
+}
+
