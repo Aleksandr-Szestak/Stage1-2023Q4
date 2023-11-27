@@ -496,6 +496,10 @@ section.main-slogan{
 
 /*#endregion*/
 
+.footer {
+    margin-top: 100px;
+}
+
 .contacts {
 
     display: flex;
@@ -505,7 +509,7 @@ section.main-slogan{
     height: 450px;
 
     padding: 100px;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 100px;
     align-self: stretch;
@@ -517,6 +521,7 @@ section.main-slogan{
 .contacts-left-phrase {
     width: 530px;
     height: 150px;
+    margin-bottom: 40px;
     color: #E1D4C9;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Inter;
@@ -537,6 +542,41 @@ section.main-slogan{
 }
 
 .social {
-    
+    font-size: 0;
 }
 
+.social > img {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.contacts-right-phrase {
+    color: #E1D4C9;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 30px */
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.contacts-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap : 8px;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+}
+
+.contacts-content-text {
+    color:  #E1D4C9;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}

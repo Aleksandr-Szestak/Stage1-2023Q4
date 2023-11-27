@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/cup.png" type="image/png" sizes="32x32">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -24,16 +25,16 @@
             <nav class="nav">
                 <ul class="menu">
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Favorite coffee</a>
+                        <a href="#favorite" class="menu-link">Favorite coffee</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">About</a>
+                        <a href="#about" class="menu-link">About</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Mobile app</a>
+                        <a href="#app" class="menu-link">Mobile app</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Contact us</a>
+                        <a href="#contacts" class="menu-link">Contact us</a>
                     </li>
                 </ul>
             </nav>
@@ -84,7 +85,7 @@
 
         </section>
         
-        <section class="main-slider">
+        <section class="main-slider" id="favorite">
 
             <div class="main-slider-inner">                
 
@@ -157,7 +158,7 @@
 
         </section>
 
-        <section class="main-about">
+        <section class="main-about" id="about">
             <div class="main-about-inner">
 
                 <div class="main-about-phrase">
@@ -194,7 +195,7 @@
             </div>
         </section>
 
-        <section class="main-mobile-app">
+        <section class="main-mobile-app" id="app">
             
             <div class="main-mobile-app-inner">
                 
@@ -253,7 +254,7 @@
 
        <footer class="footer">
 
-        <div class="contacts">
+        <div class="contacts" id="contacts">
 
             <div class="contacts-left">
                 <p class="contacts-left-phrase">
@@ -267,6 +268,37 @@
             </div>
 
             <div class="contacts-right">
+                <p class="contacts-right-phrase">
+                    Contact us
+                </p>
+
+                <div class="contacts-content">
+                    <div class="contacts-content-image">
+                        <img src="./assets/pin-alt.svg" alt="">
+                    </div>
+                    <div class="contacts-content-text">
+                        <a href="#" class="contacts-content-link">8558 Green Rd.,  LA</a>
+                    </div>
+                </div>
+
+                <div class="contacts-content">
+                    <div class="contacts-content-image">
+                        <img src="./assets/phone.svg" alt="">
+                    </div>
+                    <div class="contacts-content-text">
+                        <a href="tel:16035550123" class="contacts-content-link">+1 (603) 555-0123</a>
+                    </div>
+                </div>
+                
+                <div class="contacts-content">
+                    <div class="contacts-content-image">
+                        <img src="./assets/clock.svg" alt="">
+                    </div>
+                    <div class="contacts-content-text">
+                        <a href="#" class="contacts-content-link">Mon-Sat: 9:00 AM – 23:00 PM</a>
+                    </div>
+                </div>                              
+
 
             </div>
 
