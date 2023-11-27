@@ -385,6 +385,114 @@ section.main-slogan{
 }
 /*#endregion*/
 
+/*#region main-mobile-app */
+.main-mobile-app {
+    margin-top: 100px;
+}
 
+.main-mobile-app-inner {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
 
+.main-mobile-app-inner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-mobile-app-inner-right {
+    width: 630px;
+    height: 630px;
+}
+
+.main-mobile-app-phrase {
+    width: 630px;
+    height: 150px;
+    color: #403F3D;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.download {
+    color: #B0907A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+}
+
+.main-mobile-app-description {
+    width: 630px;
+    height: 48px;
+    color: #403F3D;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.main-mobile-app-button {
+    display: flex;
+    gap: 20px;
+}
+
+.mobile-app-button {
+    padding: 12px 20px;
+    width: 200px;
+    height: 64px;
+    border-radius: 100px;
+    border: 1px solid #665F55;
+    display: flex;
+    gap: 8px;
+    align-content: center;
+}
+
+.mobile-app-button-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.mobile-app-button-description {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 64px;
+}
+
+.p1 {
+    padding: 0;
+    margin: 0;
+    color:#403F3D;
+    /* text-align: center; */
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 14px */
+}
+
+.p2 {
+    padding: 0;
+    margin: 0;
+    color: #403F3D;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+
+/*#endregion*/
 
