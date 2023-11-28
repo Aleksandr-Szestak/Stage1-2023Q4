@@ -252,7 +252,7 @@ section.main-slogan{
 }
 
 /* сами полоски внутри label */
-.button-wrapper > div{
+.button-wrapper > span{
     width: 40px;
     height: 4px;    
     border-radius: 100px;
