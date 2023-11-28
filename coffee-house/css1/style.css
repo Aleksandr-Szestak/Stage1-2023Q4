@@ -19,7 +19,7 @@ a {
 body {    
     margin: 0;
     padding: 0;
-    background-color: #b6aea7;
+    background-color: #E1D4C9;
 }
 
 .container {
@@ -176,6 +176,8 @@ section.main-slogan{
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 24px */
+
+    cursor: pointer; 
   }
 
   .menu-button-inner {
