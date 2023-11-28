@@ -123,7 +123,7 @@ section.main-slogan{
     gap: 40px;
 }
 
-.main-slogan-phrase {
+.main-slogan-phrase h1{
     color: #E1D4C9;
     width: 530px;
     height: 228px;
@@ -132,6 +132,8 @@ section.main-slogan{
     font-style: normal;
     font-weight: 600;
     line-height: 105%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .enjoy {
@@ -189,7 +191,7 @@ section.main-slogan{
     margin-top: 100px;
 }
 
-.main-slider-phrase {
+.main-slider-phrase h2{
     color:#403F3D;
     text-align: center;
     font-family: Inter;
@@ -197,6 +199,7 @@ section.main-slogan{
     font-style: normal;
     font-weight: 600;
     line-height: 125%; /* 75px */
+    margin-bottom: 35px;
 }
 
 .favorite {
@@ -335,7 +338,7 @@ section.main-slogan{
     margin-top: 100px;
 }
 
-.main-about-phrase {
+.main-about-phrase h2{
     width: 1360px;
     height: 225px;
     color: #403F3D;
@@ -407,7 +410,7 @@ section.main-slogan{
     height: 630px;
 }
 
-.main-mobile-app-phrase {
+.main-mobile-app-phrase h2{
     width: 630px;
     height: 150px;
     color: #403F3D;
