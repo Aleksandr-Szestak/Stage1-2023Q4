@@ -71,6 +71,10 @@ body {
     line-height: 150%; /* 24px */
 }
 
+.menu {
+    display: inline-flex;
+}
+
 .menu-item{    
     display: inline;
     padding-right: 40px;
@@ -78,8 +82,16 @@ body {
     /* margin-right: 30px;   */
 }
 
-menu-link{
+.menu-link {
     padding-bottom: 4px;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 8px;      
+}
+
+.menu-link-underline,
+.menu-link-hover:hover {
+    border-bottom: solid 2px #403F3D;
 }
 
 .menu-item:last-child {
