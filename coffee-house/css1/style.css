@@ -71,15 +71,15 @@ body {
     line-height: 150%; /* 24px */
 }
 
+.menu {
+    display: inline-flex;
+}
+
 .menu-item{    
     display: inline;
     padding-right: 40px;
     list-style-type: none;
     /* margin-right: 30px;   */
-}
-
-menu-link{
-    padding-bottom: 4px;
 }
 
 .menu-item:last-child {
@@ -100,7 +100,21 @@ menu-link{
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 24px */
+
+    /* cursor: pointer; */
 }
+
+.menu-link {
+    padding-bottom: 4px;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 8px;      
+}
+
+.menu-link:hover {
+    border-bottom: solid 2px #403F3D;
+}
+
 /*#endregion*/
 
 /*#region main-slogan */
@@ -110,13 +124,11 @@ section.main-slogan{
     background-image: url('../assets/img-hero.png');
     background-size: 100% 100%;
     border-radius: 40px;
-    /* position: relative; */
 }
 
 .main-slogan-inner {
     padding: 100px;
     display: flex;
-    /* background-color: aquamarine; */
 }
 
 .main-slogan-inner-left {
