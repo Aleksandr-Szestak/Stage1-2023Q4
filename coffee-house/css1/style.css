@@ -609,3 +609,14 @@ section.main-slogan{
     font-weight: 600;
     line-height: 150%; /* 24px */
 }
+
+/* .contacts-content-link {
+    padding-bottom: 4px;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 8px;      
+}
+
+.contacts-content-link:hover {
+    border-bottom: solid 2px #403F3D;
+} */
