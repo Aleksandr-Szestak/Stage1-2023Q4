@@ -91,6 +91,7 @@ body {
 
 .menu-link-underline,
 .menu-link-hover:hover {
+    padding-bottom: 2px;
     border-bottom: solid 2px #403F3D;
 }
 

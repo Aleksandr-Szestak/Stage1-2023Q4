@@ -112,6 +112,7 @@ body {
 }
 
 .menu-link:hover {
+    padding-bottom: 2px;
     border-bottom: solid 2px #403F3D;
 }
 
@@ -121,8 +122,8 @@ body {
 section.main-slogan{
     width: 1360px;
     height: 644px;
-    background-image: url('../assets/img-hero.png');
-    background-size: 100% 100%;
+    background: url('../assets/img-hero.png') no-repeat center center;
+    background-size: cover;
     border-radius: 40px;
 }
 
@@ -525,6 +526,7 @@ section.main-slogan{
 
 /*#endregion*/
 
+/*#region footer */
 .footer {
     margin-top: 100px;
 }
@@ -620,3 +622,5 @@ section.main-slogan{
 .contacts-content-link:hover {
     border-bottom: solid 2px #403F3D;
 } */
+
+/*#endregion*/
