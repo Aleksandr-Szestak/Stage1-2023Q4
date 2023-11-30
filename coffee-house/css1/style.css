@@ -105,14 +105,15 @@ body {
 }
 
 .menu-link {
-    padding-bottom: 4px;
+    padding-bottom: 2px;
     display: inline-flex;
     justify-content: space-between;
-    gap: 8px;      
+    gap: 8px;
+    border-bottom: solid 2px #E1D4C9;
+    transition: border-bottom .5s;
 }
 
 .menu-link:hover {
-    padding-bottom: 2px;
     border-bottom: solid 2px #403F3D;
 }
 
@@ -536,7 +537,6 @@ section.main-slogan{
     display: flex;
     /* max-width: 1360px; */
     width: 1360px;
-
     height: 450px;
 
     padding: 100px;
@@ -581,6 +581,12 @@ section.main-slogan{
     margin-right: 12px;
 }
 
+.contacts-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .contacts-right-phrase {
     color: #E1D4C9;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -590,16 +596,16 @@ section.main-slogan{
     font-weight: 600;
     line-height: 125%; /* 30px */
     margin-top: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .contacts-content {
-    display: flex;
+    display: inline-flex;
     justify-content: left;
     align-items: center;
-    gap : 8px;
+    /* gap : 8px; */
     margin-bottom: 16px;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
 }
 
 .contacts-content-text {
@@ -612,15 +618,13 @@ section.main-slogan{
     line-height: 150%; /* 24px */
 }
 
-/* .contacts-content-link {
-    padding-bottom: 4px;
-    display: inline-flex;
-    justify-content: space-between;
-    gap: 8px;      
+.contacts-content-link-hover {
+    border-bottom: solid 2px #665F55;
+    transition: border-bottom .5s;
 }
 
-.contacts-content-link:hover {
-    border-bottom: solid 2px #403F3D;
-} */
+.contacts-content-link-hover:hover {
+    border-bottom: solid 2px #E1D4C9;
+}
 
 /*#endregion*/
