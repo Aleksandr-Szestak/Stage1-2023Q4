@@ -323,11 +323,17 @@ body {
     flex-direction: column;
     border-radius: 40px;
     border: 1px solid #C1B6AD;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
-.row-item:hover {
-    transform: scale(1.1);
+.row-item img {
+    /* transition: 1s; */
+    transition: transform 0.3s ease;
+    transform: scale(1.0);
+}
+
+.row-item:hover img{
+    transform: scale(0.93);
 }
 
 .row-item-image {
