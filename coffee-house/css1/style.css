@@ -640,7 +640,7 @@ section.main-slogan{
 
 /*#region ========== 1440px ========== */
 @media (max-width: 1440px) {
-
+    /* header */
     .container {
         max-width: 1280px;
         /* background-color:aquamarine; */
@@ -653,6 +653,14 @@ section.main-slogan{
     .menu-item{    
         padding-right: 30px;
     }
+
+    /* enjoy */
+
+    section.main-slogan{
+        width: 100%;
+        height: 644px;
+    }
+
 
 }
 /*#endregion*/
