@@ -766,6 +766,47 @@ section.main-slogan{
 /*#endregion*/
 
 
+/*#region ========== 610px ========== */
+@media (max-width: 610px) {
+
+    .main-slogan-inner-left {
+        width: 100%;
+    }
+
+    .main-slogan-button {
+        width: 100%;
+    }
+
+    .main-slogan-phrase h1{
+        width: 316px;
+        height: 144px;
+        font-size: 42px;
+        line-height: 115%;    
+    }
+
+    .enjoy {
+        font-size: 42px;
+        line-height: 115%;
+    }
+    
+    .main-slogan-description {
+        width: 316px;
+        height: 144px;
+    }
+
+    .main-slogan-inner {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    section.main-slogan{
+        height: 552px;
+    }
+
+}
+/*#endregion*/
+
+
 /*#region ========== 380px ========== */
 @media (max-width: 380px) {
 
@@ -784,17 +825,17 @@ section.main-slogan{
 
         /*** enjoy ***/
 
-    .main-slogan-inner {
+    /* .main-slogan-inner {
         padding-left: 16px;
         padding-right: 16px;
-    }
+    } */
 
     /* section.main-slogan{
         width: 90%;
         height: 644px;
     } */
 
-    .main-slogan-phrase h1{
+    /* .main-slogan-phrase h1{
         width: 316px;
         height: 144px;
         font-size: 42px;
@@ -809,7 +850,7 @@ section.main-slogan{
     .main-slogan-description {
         width: 316px;
         height: 144px;
-    }
+    } */
 
 }
 /*#endregion*/
