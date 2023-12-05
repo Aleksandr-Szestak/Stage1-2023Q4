@@ -679,6 +679,35 @@ section.main-slogan{
         height: 644px;
     }
 
+    
+    /*** about ***/
+
+    .main-about-phrase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-about-phrase h2{
+        width: 688px;
+        height: 450px;
+    }
+
+    .main-about-images {
+        flex-direction: column;
+    }
+
+    /* .column-1-1,
+    .column-2-2 {
+        width: 726px;
+        height: 726px;
+    } */
+
+    .column-1-2,
+    .column-2-1 {
+        display: none;
+    }
+
 }
 /*#endregion*/
 
