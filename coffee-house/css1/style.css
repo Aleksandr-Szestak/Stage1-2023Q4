@@ -719,6 +719,26 @@ section.main-slogan{
         display: none;
     }
 
+    /*** mobile app ***/
+
+    .main-mobile-app-inner {
+        flex-direction: column;
+    }
+
+    .main-mobile-app-inner-left {
+        width: 688px;
+        height: 342px;
+    }
+
+    .main-mobile-app-phrase h2{
+        width: 688px;
+    }
+
+    .main-mobile-app-description {
+        width: 688px;
+    }
+
+
 }
 /*#endregion*/
 
@@ -796,29 +816,12 @@ section.main-slogan{
         display: inline-block;
     }
 
-        /*** about ***/
-    
-        /* .main-about-phrase h2{
-            width: 348px;
-            height: 320px;
-            font-size: 32px;
-        }
-        
-        .cozy {
-            font-size: 32px;
-        }
-       
-        .column-1-1,
-        .column-2-2 {
-            width: 348px;
-            height: 590px;
-        } */
 
 }
 /*#endregion*/
 
 
-/*#region ========== 700px ========== */
+/*#region ========== 710px ========== */
 @media (max-width: 710px) {
 
     .main-slogan-inner {
@@ -871,6 +874,52 @@ section.main-slogan{
     .column-2-2 {
         width: 348px;
         height: 590px;
+    }
+
+
+    /*** mobile app ***/
+
+    .main-mobile-app-inner {
+        width: 348px;
+        gap: 40px;
+    }
+
+    .main-mobile-app-inner-left {
+        width: 348px;
+        height: 380px;
+        align-items: center;
+    }
+
+    .main-mobile-app-phrase h2{
+        width: 348px;
+        height: 80px;
+        font-size: 32px;
+    }
+
+    .download {
+        font-size: 32px;
+    }
+
+    .main-mobile-app-description {
+        width: 348px;
+        height: 72px;   
+    }
+
+    .main-mobile-app-button {
+        width: 348px;
+        height: 380px;
+        flex-direction: column;
+        align-items: flex-start;
+        /* gap: 20px; */
+    }
+
+    .main-mobile-app-inner-right {
+        width: 348px;
+        height: 348px;
+    }
+
+    .main-mobile-app-inner-right img {
+        width: 100%;
     }
 
 }
