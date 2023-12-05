@@ -413,17 +413,28 @@ section.main-slogan{
 .column-2-2 {
     width: 660px;
     height: 590px;
+    /* overflow: hidden; */
+
 }
 
 .column-1-2,
 .column-2-1 {
     width: 660px;
     height: 430px;
+    /* overflow: hidden; */
 }
 
 .main-about-images img {
     border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
 }
+
+.main-about-images img:hover {
+    /* object-fit: cover; */
+}
+
 /*#endregion*/
 
 /*#region main-mobile-app */
@@ -679,6 +690,35 @@ section.main-slogan{
         height: 644px;
     }
 
+    
+    /*** about ***/
+
+    .main-about-phrase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-about-phrase h2{
+        width: 688px;
+        height: 450px;
+    }
+
+    .main-about-images {
+        flex-direction: column;
+    }
+
+    .column-1-1,
+    .column-2-2 {
+        width: 688px;
+        height: 590px;
+    }
+
+    .column-1-2,
+    .column-2-1 {
+        display: none;
+    }
+
 }
 /*#endregion*/
 
@@ -755,6 +795,24 @@ section.main-slogan{
     .burger-menu-right-image {
         display: inline-block;
     }
+
+        /*** about ***/
+    
+        .main-about-phrase h2{
+            width: 348px;
+            height: 320px;
+            font-size: 32px;
+        }
+        
+        .cozy {
+            font-size: 32px;
+        }
+       
+        .column-1-1,
+        .column-2-2 {
+            width: 348px;
+            height: 590px;
+        }
 
 }
 /*#endregion*/
