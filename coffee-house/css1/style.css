@@ -798,7 +798,7 @@ section.main-slogan{
 
         /*** about ***/
     
-        .main-about-phrase h2{
+        /* .main-about-phrase h2{
             width: 348px;
             height: 320px;
             font-size: 32px;
@@ -812,14 +812,14 @@ section.main-slogan{
         .column-2-2 {
             width: 348px;
             height: 590px;
-        }
+        } */
 
 }
 /*#endregion*/
 
 
 /*#region ========== 700px ========== */
-@media (max-width: 700px) {
+@media (max-width: 710px) {
 
     .main-slogan-inner {
         padding-left: 16px;
@@ -853,6 +853,24 @@ section.main-slogan{
 
     .images img {
         width: 92%;
+    }
+
+    /*** about ***/
+
+    .main-about-phrase h2{
+        width: 348px;
+        height: 320px;
+        font-size: 32px;
+    }
+    
+    .cozy {
+        font-size: 32px;
+    }
+    
+    .column-1-1,
+    .column-2-2 {
+        width: 348px;
+        height: 590px;
     }
 
 }
