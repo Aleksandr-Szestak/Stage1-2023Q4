@@ -679,10 +679,6 @@ section.main-slogan{
         height: 644px;
     }
 
-    /* .images-descriprions-arrows {
-        justify-content: space-around;
-    } */
-
 }
 /*#endregion*/
 
@@ -779,7 +775,7 @@ section.main-slogan{
     }
 
     .main-slider-phrase {
-        margin: 0 auto;
+        margin: 0 auto 40px;
         width: 348px;
         height: 80px;
     }
@@ -791,21 +787,14 @@ section.main-slogan{
     .favorite {
         font-size: 32px;
     }
-    
-    .images-descriptions {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
+   
     .images {
         display: inline-flex;
         justify-content: center;
     }
 
     .images img {
-        width: 73%;
+        width: 92%;
     }
 
 }
@@ -847,6 +836,23 @@ section.main-slogan{
 
     section.main-slogan{
         height: 552px;
+    }
+
+    /*** favorites ***/
+
+    .descriprion-1 {
+        width: 348px;
+        height: 30px;
+    }
+
+    .description-2 {
+        width: 348px;
+        height: 72px;
+    }
+
+    .description-3 {
+        width: 348px;
+        height: 30px;
     }
 
 }
