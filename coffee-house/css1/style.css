@@ -608,6 +608,12 @@ section.main-slogan{
     justify-content: space-between;
 }
 
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .contacts-right-phrase {
     color: #E1D4C9;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -738,6 +744,24 @@ section.main-slogan{
         width: 688px;
     }
 
+    /*** footer ***/
+
+    .contacts {
+        flex-direction: column;
+        width: 688px;
+        height: 736px;
+        gap: 85px;
+    }
+
+    .contacts-left {
+        width: 568px;
+        height: 250px;
+    }
+
+    .contacts-right {
+        width: 568px;
+        height: 186px;
+    }
 
 }
 /*#endregion*/
@@ -759,6 +783,7 @@ section.main-slogan{
     .menu-item{    
         padding-right: 25px;
     }
+
 
 }
 /*#endregion*/
@@ -920,6 +945,35 @@ section.main-slogan{
 
     .main-mobile-app-inner-right img {
         width: 100%;
+    }
+
+    /*** footer ***/
+
+    .contacts {
+        width: 348px;
+        height: 526px;
+        gap: 25px;
+        padding: 60px 16px;
+    }
+
+    .contacts-left {
+        width: 316px;
+        height: 180px;
+    }
+
+    .contacts-right {
+        width: 316px;
+        height: 186px;
+    }
+
+    .contacts-left-phrase {
+        font-size: 32px;
+        width: 316px;
+        height: 80px;
+    }
+    
+    .time {
+        font-size: 32px;
     }
 
 }
