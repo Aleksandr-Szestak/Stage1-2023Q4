@@ -118,10 +118,14 @@ body {
     transition: border-bottom .5s;
 }
 
-@media (hover: hover) {
+/* @media (hover: hover) {
     .menu-link:hover {
         border-bottom: solid 2px #403F3D;
     }
+} */
+
+.menu-link-under {
+    border-bottom: solid 2px #403F3D;
 }
 
 .burger-menu-right-image {
