@@ -24,6 +24,7 @@
             </div>
             
             <nav class="nav">
+                
                 <ul class="menu">
                     <li class="menu-item">
                         <a href="#favorite" class="menu-link">Favorite coffee</a>
@@ -38,6 +39,16 @@
                         <a href="#contacts" class="menu-link">Contact us</a>
                     </li>
                 </ul>
+
+                <a href="menu.html" class="menu-link-spare">
+                    <span class="menu-right-text">
+                        Menu
+                    </span>
+                    <span class="menu-right-image">
+                        <img src="assets/coffee-cup.svg" alt="Coffee-Cup">
+                    </span>
+                </a> 
+
             </nav>
 
             <div class="menu-right">
@@ -53,15 +64,23 @@
 
             </div>
 
-            <div class="burger-menu-right-image">
-                <img src="assets/button-icon-burger.svg" alt="burger">
-            </div>              
+            <div class="burger">
+                <!-- <img src="assets/button-icon-burger.svg" alt="burger"> -->
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
 
        </header>
 
        <main class="main">
 
         <section class="main-slogan">
+
+            <div class="enjoy-video-block">
+                <video autoplay muted loop class="enjoy-video">
+                    <source src="assets/video (720p).mp4" type="video/mp4">
+                </video>
+            </div>
             
             <div class="main-slogan-inner">
                 
@@ -325,5 +344,8 @@
        </footer>
        
     </div>
+    
+    <script src="index.js"></script>
+
 </body>
 </html>
