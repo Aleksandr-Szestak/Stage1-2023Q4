@@ -77,6 +77,10 @@ body {
     line-height: 150%; /* 24px */
 }
 
+.menu-link-spare {
+    display: none;
+}
+
 .menu {
     display: inline-flex;
 }
@@ -971,6 +975,7 @@ section.main-slogan{
 
     .container {
         max-width: 768px;
+        overflow-x: hidden;
     }
 
     .header {
@@ -984,41 +989,83 @@ section.main-slogan{
     .menu-right {           
         display: none;
     }
-
+    
     .burger {
         display: inline-block;
     }
 
     .header {
         position: relative;
+        
     }
 
+    .menu-link-spare {
+        display: flex;
+        gap: 16px;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%; /* 40px */
+        /* text-align: center; */
+    }
+
+    .menu-link-spare img {
+        height: 1.2em;
+    }
+
+    /* .menu { */
+
     .menu {
-    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 60px;
+        padding: 20px 40px 0;
+
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%; /* 40px */
+        /* text-align: center; */
+    }
+
+    .nav {
+
         padding-top: 60px;
-    
+
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;        
 
         position: absolute;
-        top: 80px;
+        top: 60px;
         right: 0;
         
-        width: 332px;
-        height: 507px;
+        width: 768px;
+        height: 924px;
         
-        background-color: grey;
+        background-color: #E1D4C9;
+        /* background-color: gray; */
         z-index: 10;
         
         transition: 1s;
         transform: translateX(100%);
+
+        gap: 100px; 
     }
 
     .menu-item{
         margin-right: 0;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
+        margin-bottom: 0;
+        padding-right: 0;
+    }
+
+    .menu-link {
+        padding: 0;
     }
     
     .menu-item:last-child {
