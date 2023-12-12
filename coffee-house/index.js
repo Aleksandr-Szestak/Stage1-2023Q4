@@ -3,6 +3,7 @@ let burger = document.querySelector(".burger");
 
 burger.addEventListener('click', ()=>{
     document.querySelector('nav').classList.toggle('burger-menu-open');
+    document.querySelector('nav').style.transition = '1s';
     document.querySelector('.burger').classList.toggle('burger-open');
     document.querySelector('body').classList.toggle('burger-menu-open-y');
 });
