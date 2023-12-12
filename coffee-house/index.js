@@ -18,3 +18,13 @@ linkMenu.forEach((hitMenu, idx) => {
         document.querySelector('body').classList.remove('burger-menu-open-y');        
 	});
 });
+
+let spare = document.querySelector(".menu-link-spare");
+
+spare.addEventListener('click', ()=>{
+    document.querySelector('nav').classList.remove('burger-menu-open');
+    document.querySelector('nav').style.transition = '1s';
+    document.querySelector('.burger').classList.remove('burger-open');
+    document.querySelector('body').classList.remove('burger-menu-open-y');
+});
+
