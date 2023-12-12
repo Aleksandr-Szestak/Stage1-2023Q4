@@ -1046,6 +1046,7 @@ section.main-slogan{
         
         width: 768px;
         height: 924px;
+        height: 100vh;
         
         background-color: #E1D4C9;
         /* background-color: gray; */
@@ -1076,6 +1077,9 @@ section.main-slogan{
         transform: translateX(0%);
     }     
 
+    .burger-menu-open-y {
+        overflow-y: hidden;
+    }
 
 }
 /*#endregion*/
