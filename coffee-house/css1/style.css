@@ -338,35 +338,43 @@ section.main-slogan{
     line-height: 125%;
 }
 
-.images-descriprions-arrows {
+.buttons-images-descriprions {
     position: relative;
     margin-top: 40px;
-    padding-bottom: 42px;
+    margin-bottom: 40px;
+    /* background-color: aqua; */
   }
   
   .buttons-left-right {
-    position: absolute;
-    top: 37%;
-    display: flex;
+    position: absolute;    
+    top: calc(50% - 60px);
+    display: flex;    
     justify-content: space-between;
     width: 100%;
   }
-  
-  .buttons-left-right button {
-    display: grid;
-    place-items: center;
-    width: 60px;
-    height: 60px;
-    background-color: var(--color-bg-body);
-    border: none;
-    border: 1px solid var(--color-bg-container);
-    border-radius: 50%;
-    transition: all 0.27s ease-in;
+
+  .l-arrow,
+  .r-arrow {
+    cursor: pointer;
   }
   
+  .buttons-left-right button {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #E1D4C9;
+    border: none;
+    border: 1px solid #665F55;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+  }  
 
 .images-descriptions {
     width: 480px;
+    height: auto;
+
     margin: 0 auto;
     overflow-x: hidden;  
 
@@ -374,24 +382,27 @@ section.main-slogan{
 }
 
 .slider-items {
+    list-style: none;
+
     position: relative;
     display: flex;
     margin: 0 auto;
     padding: 0;
-    list-style: none;
     transition: transform 0.4s linear;
     z-index: 5;
   }
 
 .slider-item {
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
 .image-x {
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .descriprion-1 {
@@ -426,8 +437,8 @@ section.main-slogan{
 
 .description-3 {
     width: 480px;
-    height: 30px;
-    margin: 0 auto 40px;
+    height: 100%;
+    margin: 0 auto;
 
     color: #403F3D;
     text-align: center;
@@ -438,112 +449,34 @@ section.main-slogan{
     font-weight: 600;
     line-height: 125%;
 }
-  
 
-/******** Управление слайдером *********/
-
-/* блок с полосками */
 .slider-icons {
+
     width: 144px;
     height: 4px;
-    margin: 0 auto;
+    margin: 40px auto 0;
     
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
-}
-
-.slider-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width:40px;
-    height: 4px;
-    cursor: pointer; 
-}
-
-/* сами полоски внутри label */
-.button-wrapper > span{
+  }
+  
+  .slider-icon {
     width: 40px;
-    height: 4px;    
+    height: 4px;
+    flex-shrink: 0;
     border-radius: 100px;
     background-color: #C1B6AD;
-}
-
-/* переключение слайдера */
-/* #slide1:checked ~ .controls .button-wrapper .button1,
-#slide2:checked ~ .controls .button-wrapper .button2,
-#slide3:checked ~ .controls .button-wrapper .button3 {
-    cursor: auto;
+  }
+  
+  .slider-icon span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #665F55;
     border-radius: 100px;
-    background-color: #665F55;    
-    transition: background ease-in-out .2s;
-} */
-
-/******** Управление слайдером END *********/
-
-/* .images {
-    margin-bottom: 20px;
-} */
-
-/* .descriprion-1 {
-    width: 480px;
-    height: 30px;
-    margin: 0 auto 16px;
-
-    color: #403F3D;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 125%;
-} */
-
-
-/* .description-2 {
-    width: 480px;
-    height: 48px;
-    margin: 0 auto 16px;
-
-    color: #403F3D;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-} */
-
-/* .description-3 {
-    width: 480px;
-    height: 30px;
-    margin: 0 auto 40px;
-
-    color: #403F3D;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 125%;
-} */
-
-/* .images-descriprions-arrows {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-/* .images-carret {
-    padding-bottom: 30px;
-} */
+  }
 
 /*#endregion*/
 
@@ -1182,7 +1115,7 @@ section.main-slogan{
 
     /*** favorites ***/
 
-    .images-carret {
+    .buttons-left-right {
         display: none;
     }
 
