@@ -28,3 +28,35 @@ spare.addEventListener('click', ()=>{
     document.querySelector('body').classList.remove('burger-menu-open-y');
 });
 
+/* ----------- slider --------------- */
+let currentSlider = 0;
+
+const slides = document.querySelectorAll(".slider-item");
+const leftButton = document.querySelector(".l-arrow");
+const rightButton = document.querySelector(".r-arrow");
+const sliderItems = document.querySelector(".slider-items");
+
+const slideWidth = slides[0].clientWidth;
+
+leftButton.addEventListener("click", slidePrev);
+rightButton.addEventListener("click", slideNext);
+
+function slideNext() {
+    console.log(currentSlider);
+    currentSlider++;
+    if (currentSlider >= slides.length) currentSlider = 0;
+    moveSlider()
+  }
+  
+  function slidePrev() {
+    console.log(currentSlider);
+    currentSlider--;
+    if (currentSlider < 0) currentSlider = slides.length - 1;
+    moveSlider()
+  }
+
+  function moveSlider() {
+    sliderItems.style.transform = `translateX(-${currentSlider * slideWidth}px)`;
+  }
+  
+  
