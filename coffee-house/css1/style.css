@@ -338,65 +338,59 @@ section.main-slogan{
     line-height: 125%;
 }
 
-.images-descriptions {
+.images-descriprions-arrows {
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 42px;
+  }
+  
+  .buttons-left-right {
+    position: absolute;
+    top: 37%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
+  }
+  
+  .buttons-left-right button {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-bg-body);
+    border: none;
+    border: 1px solid var(--color-bg-container);
+    border-radius: 50%;
+    transition: all 0.27s ease-in;
+  }
+  
+
+.images-descriptions {
+    width: 480px;
+    margin: 0 auto;
+    overflow-x: hidden;  
+
     /* background-color: aqua; */
 }
 
-/******** Управление слайдером *********/
-
-/* инпуты делаем невидимыми */
-.images-descriptions > input {
-    display: none;
-}
-
-/* блок с полосками */
-.images-descriptions .controls {
-    width: 144px;
-    height: 4px;
+.slider-items {
+    position: relative;
+    display: flex;
     margin: 0 auto;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+    padding: 0;
+    list-style: none;
+    transition: transform 0.4s linear;
+    z-index: 5;
+  }
+
+.slider-item {
+    flex-shrink: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* label, привязанный к input */
-.button-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width:40px;
-    height: 4px;
-    cursor: pointer; 
-}
-
-/* сами полоски внутри label */
-.button-wrapper > span{
-    width: 40px;
-    height: 4px;    
-    border-radius: 100px;
-    background-color: #C1B6AD;
-}
-
-/* переключение слайдера */
-#slide1:checked ~ .controls .button-wrapper .button1,
-#slide2:checked ~ .controls .button-wrapper .button2,
-#slide3:checked ~ .controls .button-wrapper .button3 {
-    cursor: auto;
-    border-radius: 100px;
-    background-color: #665F55;    
-    transition: background ease-in-out .2s;
-}
-
-/******** Управление слайдером END *********/
-
-.images {
+.image-x {
     margin-bottom: 20px;
 }
 
@@ -412,9 +406,8 @@ section.main-slogan{
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 125%; /* 30px */
+    line-height: 125%;
 }
-
 
 .description-2 {
     width: 480px;
@@ -443,20 +436,114 @@ section.main-slogan{
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 125%; /* 30px */
+    line-height: 125%;
+}
+  
+
+/******** Управление слайдером *********/
+
+/* блок с полосками */
+.slider-icons {
+    width: 144px;
+    height: 4px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
-.images-descriprions-arrows {
+.slider-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width:40px;
+    height: 4px;
+    cursor: pointer; 
+}
+
+/* сами полоски внутри label */
+.button-wrapper > span{
+    width: 40px;
+    height: 4px;    
+    border-radius: 100px;
+    background-color: #C1B6AD;
+}
+
+/* переключение слайдера */
+/* #slide1:checked ~ .controls .button-wrapper .button1,
+#slide2:checked ~ .controls .button-wrapper .button2,
+#slide3:checked ~ .controls .button-wrapper .button3 {
+    cursor: auto;
+    border-radius: 100px;
+    background-color: #665F55;    
+    transition: background ease-in-out .2s;
+} */
+
+/******** Управление слайдером END *********/
+
+/* .images {
+    margin-bottom: 20px;
+} */
+
+/* .descriprion-1 {
+    width: 480px;
+    height: 30px;
+    margin: 0 auto 16px;
+
+    color: #403F3D;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+} */
+
+
+/* .description-2 {
+    width: 480px;
+    height: 48px;
+    margin: 0 auto 16px;
+
+    color: #403F3D;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+} */
+
+/* .description-3 {
+    width: 480px;
+    height: 30px;
+    margin: 0 auto 40px;
+
+    color: #403F3D;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+} */
+
+/* .images-descriprions-arrows {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: aquamarine; */
-}
+} */
 
-.images-carret {
+/* .images-carret {
     padding-bottom: 30px;
-}
+} */
 
 /*#endregion*/
 
