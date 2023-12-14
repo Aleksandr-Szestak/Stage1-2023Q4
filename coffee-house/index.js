@@ -35,11 +35,32 @@ const slides = document.querySelectorAll(".slider-item");
 const leftButton = document.querySelector(".l-arrow");
 const rightButton = document.querySelector(".r-arrow");
 const sliderItems = document.querySelector(".slider-items");
+const slider_images_descriptions = document.querySelector(".images-descriptions");
+
+const icon = document.querySelectorAll(".slider-icon");
+const iconBlock = document.querySelectorAll(".slider-icon span");
 
 const slideWidth = slides[0].clientWidth;
 
 leftButton.addEventListener("click", slidePrev);
 rightButton.addEventListener("click", slideNext);
+
+/* observe */
+let observer = new IntersectionObserver(autoSlider, {threshold: 0.33});
+observer.observe(slider_images_descriptions);
+iconBlock.forEach(item => {
+  item.addEventListener("animationend", slideNext);
+});
+
+function autoSlider(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      icon[0].classList.add("slider-icon-active");
+      observer.unobserve(entry.target);
+    }
+  });
+}
+/* end observe */
 
 function slideNext() {
     console.log(currentSlider);
@@ -56,6 +77,9 @@ function slideNext() {
   }
 
   function moveSlider() {
+    icon.forEach(i => i.classList.remove('slider-icon-active'));
+    icon[currentSlider].classList.add('slider-icon-active');
+  
     sliderItems.style.transform = `translateX(-${currentSlider * slideWidth}px)`;
   }
   
