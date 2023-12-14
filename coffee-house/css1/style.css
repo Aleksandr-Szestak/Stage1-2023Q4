@@ -1155,12 +1155,23 @@ section.main-slogan{
         font-size: 32px;
     }
    
-    .images {
+    /* .images {
         display: inline-flex;
         justify-content: center;
+    } */
+
+    /* .images-descriptions {
+        width: 348px;
+        background-color: aqua;
     }
 
-    .images img {
+    .slider-items {
+        width: 348px;
+        background-color: aqua;
+
+    } */
+
+    .slider-item img {
         width: 92%;
     }
 
@@ -1315,6 +1326,18 @@ section.main-slogan{
         height: 30px;
     }
 
+    .images-descriptions {
+        width: 348px;
+        /* background-color: aqua; */
+    }
+
+    .slider-items {
+        /* align-items: center; */
+
+        /* width: 348px; */
+        /* background-color: aqua; */
+    }
+
 }
 /*#endregion*/
 
@@ -1334,35 +1357,6 @@ section.main-slogan{
         padding-right: 16px;
         width: 100%;
     }
-
-        /*** enjoy ***/
-
-    /* .main-slogan-inner {
-        padding-left: 16px;
-        padding-right: 16px;
-    } */
-
-    /* section.main-slogan{
-        width: 90%;
-        height: 644px;
-    } */
-
-    /* .main-slogan-phrase h1{
-        width: 316px;
-        height: 144px;
-        font-size: 42px;
-        line-height: 115%;    
-    }
-    
-    .enjoy {
-        font-size: 42px;
-        line-height: 115%;
-    }
-    
-    .main-slogan-description {
-        width: 316px;
-        height: 144px;
-    } */
 
 }
 /*#endregion*/
