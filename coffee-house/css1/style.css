@@ -369,6 +369,15 @@ section.main-slogan{
     border: 1px solid #665F55;
     border-radius: 50%;
     transition: all .3s ease-in;
+  }
+
+  @media (hover: hover) {
+    .l-arrow:hover,
+    .r-arrow:hover {
+      color: #E1D4C9;
+      background-color: #665F55;
+      /* background-color: aqua; */
+    }
   }  
 
 .images-descriptions {
@@ -477,6 +486,19 @@ section.main-slogan{
     background-color: #665F55;
     border-radius: 100px;
   }
+
+  .slider-icon-active span {
+    animation-name: fill-in;
+    animation-duration: 7s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes fill-in {
+    from {width: 0}
+    to {width: 100%}
+  }
+  
 
 /*#endregion*/
 
