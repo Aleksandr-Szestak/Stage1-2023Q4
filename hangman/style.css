@@ -1,0 +1,39 @@
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: bisque;    
+}
+
+.container {
+    display: flex;
+    min-height: 80vh;
+    max-width: 1440px;
+    margin: 10vh auto;    
+    /* background-color: gray; */
+    border-radius: 1em;
+}
+
+.left-block {
+    width: 40%;
+    margin: 10px;
+    border-radius: 1em;
+    background-color: azure;
+}
+
+.right-block {
+    width: 60%;
+    margin: 10px;
+    border-radius: 1em;
+    /* background-color: blueviolet; */
+}
+
+.gallows-image {
+    display: block;
+    margin: auto;
+    height: 100%;
+}
+
