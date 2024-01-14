@@ -22,18 +22,37 @@
     margin: 10px;
     border-radius: 1em;
     background-color: azure;
+    position: relative;
 }
 
 .right-block {
     width: 60%;
     margin: 10px;
     border-radius: 1em;
-    /* background-color: blueviolet; */
+    background-color: azure;
 }
 
 .gallows-image {
     display: block;
     margin: auto;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.loser-images {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 192px;
+    right: 52px;
+}
+
+.top-images,
+.middle-images,
+.bottom-images {
+    display: flex;
+    justify-content: center;
 }
 
