@@ -38,7 +38,7 @@ const qa_quiz = [
 
     {
         word: 'codepen',
-        hint: 'Online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets',
+        hint: 'Online code editor to build, test, and discover front-end code'
     },
 
     {
@@ -198,6 +198,7 @@ solution_hint_print.textContent = solution_hint;
 hint_quiz.append(solution_hint_print);
 // --------------------------------------------------------------------
 let score = 0;
+let arrLetters = [];
 
 let score_print = document.createElement('p');
 score_print.classList.add('score-print');
@@ -221,6 +222,10 @@ keyboard_layout.forEach( (keyboard_row) => {
         one_button.textContent = one_letter;
         one_button.addEventListener('click', () => {
             one_button.setAttribute('disabled', 'disabled');
+            arrLetters.push(one_button.textContent);
+            console.log(arrLetters);         
+            
+            
         });
         one_row.append(one_button);
     });
