@@ -23,6 +23,8 @@
     border-radius: 1em;
     background-color: azure;
     position: relative;
+
+    /* display: none; */
 }
 
 .right-block {
@@ -55,4 +57,24 @@
     display: flex;
     justify-content: center;
 }
+
+.word-quiz,
+.hint-quiz,
+.score-quiz {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+}
+
+.letters-quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 5px;
+}
+
+/* .solution-template {
+    display: flex;
+    justify-content: center;
+} */
 

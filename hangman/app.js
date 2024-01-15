@@ -1,5 +1,82 @@
 console.log("Load application!")
 // --------------------------------------------------------------------
+const qa_quiz = [
+    {
+        word: 'section',
+        hint: 'Semantic html tag',
+    },
+
+    {
+        word: 'courier',
+        hint: 'Monospaced font',
+    },
+
+    {
+        word: 'ubuntu',
+        hint: 'Linux distribution based on Debian',
+    },
+
+    {
+        word: 'github',
+        hint: 'Platform that allows developers to create, store, and manage their code',
+    },
+
+    {
+        word: 'dailymotion',
+        hint: 'French video-sharing technology platform',
+    },
+
+    {
+        word: 'android',
+        hint: 'Mobile operating system developed by Google',
+    },
+
+    {
+        word: 'javascript',
+        hint: 'Programming language and core technology of the World Wide Web, alongside HTML and CSS',
+    },
+
+    {
+        word: 'codepen',
+        hint: 'Online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets',
+    },
+
+    {
+        word: 'router',
+        hint: 'Networking device that forwards data packets between computer networks',
+    },
+
+    {
+        word: 'browser',
+        hint: 'Application for accessing websites and the Internet.',
+    },
+
+];
+
+let last_qa_current = -1;
+let qa_current;
+
+//=================================================================
+function change_qa() {
+
+while (true) {
+  qa_current = Math.floor(Math.random() * qa_quiz.length );
+  if (qa_current != last_qa_current) {
+    last_qa_current = qa_current;
+    break;
+  }
+}
+  
+return; 
+}  
+
+// for (let i=1; i<=20; i++){
+//    change_qa();
+//    console.log( qa_current, qa_quiz[qa_current].word );  
+// }
+
+
+// --------------------------------------------------------------------
 // Create main window
 const body = document.querySelector('.body');
 
@@ -99,5 +176,56 @@ right_block.append(score_quiz);
 let letters_quiz = document.createElement('div');
 letters_quiz.classList.add('letters-quiz');
 right_block.append(letters_quiz);
+// --------------------------------------------------------------------
+change_qa();
+console.log( qa_current, qa_quiz[qa_current].word, qa_quiz[qa_current].hint );
+
+let solution_word = qa_quiz[qa_current].word;
+let solution_hint = qa_quiz[qa_current].hint;
+let solution;
+
+solution = "_".repeat(solution_word.length);
+console.log(solution);
+// --------------------------------------------------------------------
+let solution_template = document.createElement('p');
+solution_template.classList.add('solution-template');
+solution_template.textContent = solution;
+word_quiz.append(solution_template);
+
+let solution_hint_print = document.createElement('p');
+solution_hint_print.classList.add('solution-hint-print');
+solution_hint_print.textContent = solution_hint;
+hint_quiz.append(solution_hint_print);
+// --------------------------------------------------------------------
+let score = 0;
+
+let score_print = document.createElement('p');
+score_print.classList.add('score-print');
+score_print.textContent = `Incorrect guesses ${score}/6`;
+score_quiz.append(score_print);
+// --------------------------------------------------------------------
+const keyboard_layout = [ 'qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
+
+keyboard_layout.forEach( (keyboard_row) => {   
+
+    let one_row = document.createElement('div');
+    one_row.classList.add('one-row');
+    letters_quiz.append(one_row);
+
+    let arr_row = keyboard_row.split('');
+    console.log(arr_row);
+    arr_row.forEach( (one_letter) => {
+        let one_button = document.createElement('button');
+        one_button.classList.add('one-button');
+        one_button.classList.add(`letter_${one_letter}`);
+        one_button.textContent = one_letter;
+        one_button.addEventListener('click', () => {
+            one_button.setAttribute('disabled', 'disabled');
+        });
+        one_row.append(one_button);
+    });
+
+} );
+// --------------------------------------------------------------------
 
 // --------------------------------------------------------------------
